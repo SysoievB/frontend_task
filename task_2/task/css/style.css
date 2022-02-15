@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 20px;
 	line-height: 36px;
 	font-weight: 700;
-	color: #273d46;
+	color: rgba(39, 61, 70, 1)
 }
 .forth_issue {
 	opacity: 0.3;
@@ -117,7 +117,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: #273d46;
 }
 .rounded_img {
-	margin: 50px 0 0 0250px;
-	background: url('../img/rounded_rectangle.png') left no-repeat;
+	margin: 50px 0 0 250px;
+	width: 199px;
+    height: 44px;
+	border-radius: 15px; 
+	background-color: #9ec5c2;
     box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+}
+.img_text {
+	font-family: Arial;
+	text-indent: 30px;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+	background: url('../img/shape_arrow.png') 151px no-repeat; 
+    letter-spacing: 0.2em;
+    color: #ffffff;
 }
