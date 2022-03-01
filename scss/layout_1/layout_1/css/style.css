@@ -7,7 +7,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -74,9 +73,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.tplborder, .link, .link-2 {
+.tplborder, .link-2, .link {
   font-size: 100px;
   border-bottom: 5px dashed red;
+}
+
+.body {
+  background-color: red;
 }
 
 .block {
@@ -85,11 +88,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px;
   line-height: 60px;
 }
-
 .block .block__text {
   font-size: 100px;
 }
-
 .block .block__text span {
   color: green;
 }
@@ -101,11 +102,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
   font-size: 100px;
 }
-
 .block .link {
   font-size: 100px;
 }
-
 .link:hover {
   color: #fff;
 }
