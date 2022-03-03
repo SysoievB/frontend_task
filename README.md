@@ -1,6 +1,5 @@
 # frontend_task
 
-Some front end tasks.
-Write code from layout **/Source.
+Study project. Code was written from layout with directory  **/Source.
 
-Technologies: VS code, CSS, HTML, Marsy.
+Technologies: VS code, Prepros, CSS, SCSS, HTML, Marsy.
