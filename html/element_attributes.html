@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML element attributes</title>
+</head>
+<body>
+<h3>br tag is used for<br> inserting a single line, <br/>and such tags called void element</h3>
+<h3>Global attributes:</h3>
+<ol>
+  <li>accesskey: определяет клавишу для быстрого доступа к элементу</li>
+  <li>class: задает класс CSS, который будет применяться к элементу</li>
+  <li>contenteditable: определяет, можно ли редактировать содержимое элемента</li>
+  <li>contextmenu: определяет контекстное меню для элемента, которое отображается при нажатии на элемент правой кнопкой мыши</li>
+  <li>dir: устанавливает направление текста в элементе</li>
+  <li>draggable: определяет, можно ли перетаскивать элемент</li>
+  <li>dropzone: определяет, можно ли копировать переносимые данные при переносе на элемент</li>
+  <li>hidden: скрывает элемент</li>
+  <li>id: уникальный идентификатор элемента. На веб-странице элементы не должны иметь повторяющихся идентификаторов</li>
+  <li>lang: определяет язык элемента</li>
+  <li>spellcheck: указывает, будет ли для данного элемента использоваться проверка правописания</li>
+  <li>style: задает стиль элемента</li>
+  <li>tabindex: определяет порядок, в котором по элементам можно переключаться с помощью клавиши TAB</li>
+  <li>title: устанавливает дополнительное описание для элемента</li>
+  <li>translate: определяет, должно ли переводиться содержимое элемента</li>
+</ol>
+<h3>Наиболее часто используются три: class, id и style.</h3>
+
+<p accesskey="k">Press Alt + K to focus on this paragraph.</p>
+<div class="highlight">This div uses the class attribute.</div>
+<p contenteditable="true">You can edit this text directly in the browser.</p>
+<p dir="rtl">This text is right-to-left.</p>
+<img src="https://pl.wikipedia.org/wiki/Preply#/media/Plik:Preply_logo_2022.jpg" alt="draggable image" draggable="true">
+<div dropzone="copy string:text/plain" style="width:200px;height:50px;border:1px solid black;">
+  Drop something here
+</div>
+<p hidden>This paragraph is hidden.</p>
+<p id="uniquePara">This paragraph has a unique ID.</p>
+<p lang="fr">Bonjour, ceci est en français.</p>
+<textarea spellcheck="true">Thiss textt will bee cheked for spellingg.</textarea>
+<p style="color: green; font-weight: bold;">This paragraph uses inline styles.</p>
+<input type="text" tabindex="1" placeholder="First input">
+<input type="text" tabindex="2" placeholder="Second input">
+<p title="This is a tooltip shown on hover.">Hover over this paragraph to see a tooltip.</p>
+<p translate="no">Do not translate this text.</p>
+<menu type="context" id="myMenu">
+  <menuitem label="Custom Action"></menuitem>
+</menu>
+</body>
+</html>
