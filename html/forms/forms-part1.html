@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms part 1</title>
+</head>
+<body>
+
+<form id="myForm" method="post" autocomplete="on" action="">
+  <input id="inputValue" name="login"/>
+  <input type="submit" value="Submit"/>
+</form>
+
+<script>
+  const form = document.getElementById('myForm');
+  const input = document.getElementById('inputValue');
+
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); //stop page reload
+      console.log('My value from form is -> ' + input.value);
+  });
+</script>
+
+</body>
+</html>
