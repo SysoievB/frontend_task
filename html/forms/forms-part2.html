@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form id="myForm">
+  <p><input id="textInput" type="text" name="login"/></p>
+  <p><input id="passInput" type="password" name="password"/></p>
+  <p>
+    <button type="submit" formmethod="get" formaction="buttons.html">Send</button>
+    <button type="reset">Reset</button>
+  </p>
+</form>
+<form>
+    <p>
+    <label for="phonesList">Phone model: </label>
+    <input list="phonesList" type="text" name="model" placeholder="Введите модель"/></p>
+    <p><button type="submit">Submit</button></p>
+</form>
+<datalist id="phonesList">
+    <option value="iPhone 6S" label="54000"/>
+    <option value="Lumia 950">35000</option>
+    <option value="Nexus 5X"/>
+</datalist>
+<form>
+    <p>
+        <label for="ageNumber">Age: </label>
+        <input id="ageNumber" type="number" step="1" min="1" max="100" name="age"/>
+    </p>
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+</form>
+<form>
+    <p>
+        <label for="priceNumber">Price: </label>
+        1<input id="priceNumber" type="range" step="1" min="0" max="100" name="price"/>100
+    </p>
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+</form>
+<form>
+    <p>
+        <input type="checkbox" name="java">Java
+    </p>
+    <p>
+        <input type="checkbox" name="python">Python
+    </p>
+    <p>
+        <input type="checkbox" name="js">JavaScript
+    </p>
+</form>
+<form>
+    <h2>Set your gender</h2>
+    <p>
+        <input type="radio" value="male" checked name="gender">Male
+        <input type="radio" value="male" name="gender">Female
+    </p>
+</form>
+<script>
+  const text = document.getElementById('textInput');
+  const pass = document.getElementById('passInput');
+  const form = document.getElementById('myForm');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      console.log(text.value);
+      console.log(pass.value);
+  });
+
+  form.addEventListener('reset', () => {
+      console.log('Form was cleared');
+  });
+</script>
+</body>
+</html>
