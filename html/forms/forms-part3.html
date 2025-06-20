@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms part 3</title>
+</head>
+<body>
+<form>
+    <p>
+      <label for="email">Email: </label>
+      <input type="email" placeholder="user@gmail.com" id="email" name="email"/>
+    </p>
+    <p>
+      <label for="url">URL: </label>
+      <input type="url" id="url" name="url"/>
+    </p>
+    <p>
+      <label for="phone">Phone number: </label>
+      <input type="tel" placeholder="(XXX)-XXX-XXXX" id="phone" name="phone"/>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+</form>
+<form>
+  <p>
+    <label for="birthday">Birthday: </label>
+    <input type="date" id="birthday" name="birthday"/>
+  </p>
+</form>
+<form>
+  <p>
+    <label for="datetime">Date & time: </label>
+    <input type="datetime-local" id="datetime" name="datetime"/>
+  </p>
+</form>
+<form>
+  <p>
+    <label for="month">Month: </label>
+    <input type="month" id="month" name="month"/>
+  </p>
+</form>
+<form>
+  <p>
+    <label for="week">Week: </label>
+    <input type="week" id="week" name="week"/>
+  </p>
+</form>
+<form>
+  <p>
+    <label for="time">Time: </label>
+    <input type="time" id="time" name="time"/>
+  </p>
+</form>
+<form enctype="multipart/form-data" method="post" action="">
+  <p>
+    <input type="file" name="file" multiple/>
+  </p>
+</form>
+<form method="get">
+    <p>
+        <label for="phone1">Choose model:</label>
+
+        <select id="phone1" name="phone1">
+            <optgroup label="Apple">
+                <option value="iphone 6s">iPhone 6S</option>
+                <option value="iphone 6s plus">iPhone 6S Plus</option>
+                <option value="iphone 5se">iPhone 5SE</option>
+            </optgroup>
+            <optgroup label="Microsoft">
+                <option value="lumia 950">Lumia 950</option>
+                <option value="lumia 950 xl">Lumia 950 XL</option>
+                <option value="lumia 650">Lumia 650</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+</form>
+<form method="get">
+    <p>
+        <label for="comment">Your comment:</label><br/>
+        <textarea name="comment" id="comment" placeholder="Not more than 200 symbols" maxlength="200" cols="30" rows="7"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Add comment" />
+    </p>
+</form>
+</body>
+</html>
