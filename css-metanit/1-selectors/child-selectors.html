@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child selectors</title>
+  <style>
+    .article > p {
+        color: red;
+    }
+
+    .anotherArticle {
+        color: blue;
+    }
+  </style>
+</head>
+<body>
+<div class="article">
+    <p>Note to the article</p>
+    <div class="content">
+        <p>Article text</p>
+    </div>
+</div>
+<div class="anotherArticle">
+<p>Note to another article</p>
+    <div class="content">
+        <p>Article text</p>
+    </div>
+</div>
+</body>
+</html>
