@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo class :is & :where</title>
+  <style>
+    /* header > p, main > p, footer > p {font-size: 18px; font-family: Verdana;} альтернативный вариант без :is*/
+    /*:is(header, main, footer) > p {
+        font-size: 18px;
+        font-family: Verdana,serif;
+    }*/
+    /*
+    В чем же разница между :is() и :where()? Псевдокласс :is() применяет
+    каскадность стилей (selector specificity), которая определяется по
+    селектору с самым большим рангом. А для стилей псевдокласса :where()
+    ранг селекторов всегда равен 0.
+    */
+    :where(header, main, footer) > p {
+        font-size: 18px;
+        font-family: Verdana,serif;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <p>Text in Header</p>
+    <div><p>Text in Header Div</p></div>
+</header>
+<main>
+    <p>Text in Main</p>
+    <div><p>Text in Main Div</p></div>
+</main>
+<footer>
+    <p>Text in Footer</p>
+    <div><p>Text in Footer Div</p></div>
+</footer>
+</body>
+</html>
