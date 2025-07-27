@@ -13,4 +13,15 @@ h1 {
 
 #product-overview h1 {
     background: #3a5856;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 20px;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #2ddf21;
+    padding:  8px 6px;
 }
