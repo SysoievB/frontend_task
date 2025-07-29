@@ -1,0 +1,21 @@
+.body-div__1 {
+    padding: 20px 10px 15px 25px;
+    margin: 20px 0 10px 15px;
+    border: 1px dashed #d55a5a;
+    height: 300px;/*100vh; -- covers full screen height*/
+    width: 50%;
+    display: inline-block;
+    visibility: hidden;/* or -- display: none; */
+}
+
+.body-div__2 {
+    padding: 20px 10px 15px 25px;
+    margin: 20px 0 10px 15px;
+    border: 1px dashed #d55a5a;
+    display: inline-block;
+}
+
+.body-div__2:hover {
+    background-color: black;
+    text-align: center;
+}
