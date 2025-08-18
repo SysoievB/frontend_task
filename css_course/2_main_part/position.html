@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .demo-section {
+      height: 200px;
+      padding: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    /* 🔹 Relative */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+      background: lightcoral;
+    }
+
+    /* 🔹 Absolute */
+    .absolute-container {
+      position: relative; /* important! parent context */
+      height: 200px;
+      background: #f0f0f0;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 120px;
+      height: 120px;
+      background: lightseagreen;
+    }
+
+    /* 🔹 Fixed */
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      height: 120px;
+      background: gold;
+      border: 2px solid black;
+    }
+
+    /* 🔹 Sticky */
+    .sticky-box {
+      position: sticky;
+      top: 0; /* sticks when you scroll past */
+      width: 100%;
+      background: lightskyblue;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 2px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky-box">I am STICKY (sticks to top when scrolling)</div>
+
+  <div class="demo-section">
+    <p><strong>Relative:</strong> This red box is shifted relative to its normal position.</p>
+    <div class="relative-box"></div>
+  </div>
+
+  <div class="demo-section absolute-container">
+    <p><strong>Absolute:</strong> This green box is positioned inside its parent (top-right corner).</p>
+    <div class="absolute-box"></div>
+  </div>
+
+  <div class="demo-section">
+    <p>Scroll down to see the <strong>fixed</strong> yellow box in the bottom-right corner. It stays put even while scrolling!</p>
+  </div>
+
+  <div class="demo-section">
+    <p>Keep scrolling... the sticky header above should remain at the top until this section ends.</p>
+  </div>
+
+  <div class="demo-section">
+    <p>More content here so you can scroll...</p>
+  </div>
+
+  <div class="fixed-box">I am FIXED</div>
+</body>
+</html>
