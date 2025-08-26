@@ -74,6 +74,9 @@
     .testimonial {
         margin: 3rem 0;
         max-width: 1500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .testimonial__image-container {
