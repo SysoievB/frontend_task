@@ -1,11 +1,19 @@
 main {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .signup-title {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #ff5454;
+}
+
+.signup-form {
+    padding: 1rem;
+}
+
+.signup-form label {
+    font-weight: bold;
 }
 
 .signup-form label,
@@ -16,11 +24,12 @@ main {
     width: 100%;
 }
 
+/* .signup-form input[type="checkbox"] */
 .signup-form input[id*="terms"],
 .signup-form input[id*="terms"] + label {
     display: inline-block;
     width: auto;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .signup-form input:not([type="checkbox"]),
@@ -64,7 +73,7 @@ main {
     margin-top: 1rem;
 }
 
-@media (max-width: 40rem) {
+@media (min-width: 40rem) {
     .signup-form {
         margin: auto;
         width: 25rem;
