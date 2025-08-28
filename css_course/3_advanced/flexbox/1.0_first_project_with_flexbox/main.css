@@ -63,7 +63,7 @@
 }
 
 .plan__title {
-    color: #0e4f1f;
+    color: var(--dark-green);
 }
 
 .plan__price {
@@ -75,7 +75,7 @@
 }
 
 .plan--highlighted .plan__price {
-    color: #0e4f1f;
+    color: var(--dark-green);
 }
 
 .plan__features {
@@ -187,8 +187,8 @@
 }
 
 .modal__action {
-    border: 1px solid #0e4f1f;
-    background: #0e4f1f;
+    border: 1px solid var(--dark-green);
+    background: var(--dark-green);
     text-decoration: none;
     color: white;
     font: inherit;

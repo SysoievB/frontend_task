@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+:root {
+    --dark-green: var(--dark-green);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -76,7 +80,7 @@ main {
 }
 
 .main-header__brand {
-    color: #0e4f1f;
+    color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
     /* width: 20px; */
@@ -106,7 +110,7 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
     text-decoration: none;
-    color: #0e4f1f;
+    color: var(--dark-green);
     font-weight: bold;
     padding: 0.2rem 0;
 }
@@ -211,10 +215,10 @@ main {
 }
 
 .button {
-    background: #0e4f1f;
+    background: var(--dark-green);
     color: white;
     font: inherit;
-    border: 1.5px solid #0e4f1f;
+    border: 1.5px solid var(--dark-green);
     padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
@@ -224,7 +228,7 @@ main {
 .button:hover,
 .button:active {
     background: white;
-    color: #0e4f1f;
+    color: var(--dark-green);
 }
 
 .button:focus {

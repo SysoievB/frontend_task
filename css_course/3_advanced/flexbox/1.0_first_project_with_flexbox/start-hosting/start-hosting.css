@@ -49,7 +49,7 @@ main {
 
 .signup-form input[type="checkbox"]:checked {
     background: #2ddf5c;
-    border: #0e4f1f;
+    border: var(--dark-green);
 }
 
 .signup-form input.invalid,
